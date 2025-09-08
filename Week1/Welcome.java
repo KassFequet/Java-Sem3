@@ -4,17 +4,17 @@ import java.util.Scanner;
 public class Welcome{
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         int a,b,c;
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter an integer; ");
+        System.out.println("Enter an integer: ");
         a = input.nextInt();
-        System.out.println("enter another integer: ");
+        System.out.println("Enter another integer: ");
         b = input.nextInt();
         c = a+b;
         System.out.println("Sum = " + c );
-        input.close();        
+        input.close();
         
         //System.out.println("Hello world");
 
