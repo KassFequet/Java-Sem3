@@ -13,6 +13,8 @@ public class Addition {
         num2 = input.nextInt();
         sum = num1 + num2;
         System.out.printf("sum = %d\n", sum);
+
+        input.close();
     }
     
 }
