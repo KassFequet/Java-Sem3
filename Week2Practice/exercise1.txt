@@ -1,0 +1,38 @@
+1. 5 objects/classes
+- Drugs
+- Nurses
+- Equipment
+- Wards
+- OR
+
+2. Attributes/Behaviours
+    A. Doctor
+    Attributes
+    - dr_id: int += 1
+    -name: String = “name”
+    -specialty: String = “specialty”
+    -availability: Boolean = “available”
+
+    Behaviours
+    +Doctor()
+    +Doctor(dr_id: int, name: String, speciality:String, available: boolean)
+    +getAvailability(): Date
+    +getPaged(): String
+
+    B. Patient
+    Attributes
+    -pt_id: int += 1
+    -name: String = “name”
+    -ward: String = “ward”
+    -illness: String = “illness”
+    -condition: String = “condition”
+
+    Behaviours
+    +Patient()
+    +Patient(pt_id: int, name: String, ward: String, illness: String, condition: String)
+    +getCondition(): String
+    +getVitals(): String
+
+
+
+
