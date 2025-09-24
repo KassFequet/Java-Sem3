@@ -51,5 +51,4 @@ public class Employee {
         return ("ID: " + this.id + " Name: " + this.getName() + " Salary: " + this.salary);
     }
 
-    
 }
