@@ -51,11 +51,13 @@ public class Circle {
         return PI * radius * radius;
     }
 
-    // public static void main(String[] args) {
-    //     Circle C1 = new Circle();
-    //     Circle C2 = new Circle(5);
-    //     C1.color = "orange";
-    // }
+    public static void main(String[] args) {
+        Circle C1 = new Circle();
+        Circle C2 = new Circle(5.0);
+
+        System.out.println("Area of c1: " + C1.getArea());
+        System.out.println("Area of c2: " + C2.getArea());
+    }
     public static void display()
     {
         System.out.println(count);
