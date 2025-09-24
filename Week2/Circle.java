@@ -4,6 +4,7 @@ public class Circle {
     private double radius = 1.0;
     private String color = "red";
     private static int count = 0;
+    public static final double PI = 3.14;
 
     //if you havent provided any constructor than default constructor is used//
 
@@ -47,9 +48,7 @@ public class Circle {
 
     public double getArea()
     {
-        double Area = Math.PI * this.radius * this.radius;
-        display();
-        return (Area);
+        return PI * radius * radius;
     }
 
     // public static void main(String[] args) {
