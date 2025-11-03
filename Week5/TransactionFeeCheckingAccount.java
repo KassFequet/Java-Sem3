@@ -3,11 +3,12 @@ package Week5;
 public class TransactionFeeCheckingAccount  extends CheckingAccount {
 
     private static final double FEE = 2.00;
-        public TransactionFeeCheckingAccount() {
+
+    public TransactionFeeCheckingAccount() {
     }
 
     public TransactionFeeCheckingAccount(double interest) {
-        super();
+        super(interest);
     }
 
         public TransactionFeeCheckingAccount(double interest, double amount) {
@@ -18,9 +19,14 @@ public class TransactionFeeCheckingAccount  extends CheckingAccount {
         withdraw(FEE);
     }
 
-    public void deposit(double amount){
-        this.chargeFee();
-        super.deposit(amount);
+    public void deposit(double amount)
+    {
+        if((super.getBalance()+amount) >= FEE)
+        {
+            this.chargeFee();
+            super.deposit(amount);
+        }
+        else System.out.println("Not enough funds to cover fee");
     }
 
     public void withdraw(double amount){
